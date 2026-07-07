@@ -8,12 +8,12 @@ export default function FooterLinks({
   groups,
 }: FooterLinksProps) {
   return (
-    <div>
+    <div className="text-center md:text-left">
       <h3 className="mb-6 font-display text-2xl font-bold uppercase text-white">
         Quick Links
       </h3>
 
-      <div className="grid grid-cols-2 gap-x-16">
+      <div className="grid grid-cols-2 gap-x-10 gap-y-4 sm:gap-x-16">
         {groups.map((group) => (
           <ul
             key={group.id}

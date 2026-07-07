@@ -23,12 +23,12 @@ export default function SocialLinks({
   links,
 }: Props) {
   return (
-     <div className="flex flex-col items-center">
-  <h3 className="mb-6 font-display text-2xl font-bold uppercase text-white">
-    Social Media
-  </h3>
+    <div className="flex flex-col items-center">
+      <h3 className="mb-6 font-display text-2xl font-bold uppercase text-white">
+        Social Media
+      </h3>
 
-      <div className="flex gap-4">
+      <div className="flex flex-wrap justify-center gap-4">
         {links.map((link) => {
           const Icon = iconMap[link.platform];
 

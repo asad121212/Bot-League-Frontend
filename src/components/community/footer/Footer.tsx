@@ -3,15 +3,11 @@ import SocialLinks from "./SocialLinks";
 
 import { footerLinkGroups, socialLinks } from "@/data/siteData";
 
-
 export default function Footer() {
   return (
-    <footer className="border-t border-surface-border px-10 py-12">
-      <div className="flex flex-col gap-12 lg:flex-row lg:items-start lg:justify-between">
-
-        {/* Right Side */}
-
-        <div className="flex flex-1 justify-between">
+    <footer className="border-t border-surface-border px-5 py-12 sm:px-8 lg:px-10">
+      <div className="flex flex-col gap-12">
+        <div className="flex flex-col items-center gap-12 md:flex-row md:items-start md:justify-between">
           <FooterLinks groups={footerLinkGroups} />
 
           <SocialLinks links={socialLinks} />
